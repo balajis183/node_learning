@@ -107,7 +107,40 @@ for (let i = 0; i < 1000000; i++) {
 console.timeEnd("Execution Time");
 ```
 
-## 7. Why JavaScript Executes Fast?
+## 7. Deleting a File in Node.js using `fs.unlink()`
+
+## Overview
+The `fs.unlink()` method is used to delete a file from the filesystem in Node.js.
+
+## Syntax
+```javascript
+fs.unlink(path, callback)
+```
+- **`path`**: The file path of the file to be deleted.
+- **`callback`**: A function that handles errors and success.
+
+## Example
+```javascript
+const fs = require("fs");
+
+fs.unlink("delete.js", function (err) {
+  if (err) {
+    console.log("Error deleting file:", err);
+  } else {
+    console.log("File deleted successfully: delete.js");
+  }
+});
+```
+
+## Notes
+- If the file does **not** exist, an error is thrown.
+- This method **permanently deletes** the file.
+- The operation is **asynchronous**, meaning it does not block the event loop.
+
+---
+
+
+## 8. Why JavaScript Executes Fast?
 - **Single-threaded, non-blocking I/O**: Uses asynchronous callbacks.
 - **Event Loop**: Manages operations efficiently.
 - **V8 Engine Optimization**: JavaScript engine optimizes code execution.
