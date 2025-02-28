@@ -66,7 +66,7 @@ app.get("/users", (req, res) => {
   res.json([{ id: 1, name: "Alice" }, { id: 2, name: "Bob" }]);
 });
 ```
-✅ `/users` is an **endpoint** that sends a JSON list of users.
+✅ `/users` is an endpoint that retrieves data from the database and sends a JSON list of users to the client. 
 
 Express makes it easy to define RESTful APIs.
 
@@ -89,9 +89,14 @@ This flexibility makes Express **lightweight, powerful, and widely used**.
 ---
 
 ## Summary
-✅ **Why Express.js?** → Simplifies routing, middleware, and API development.
-✅ **Why not just Node.js HTTP module?** → Express provides cleaner, maintainable, and scalable code.
-✅ **What is an endpoint?** → A URL where Express.js listens and responds to requests.
-✅ **If Express is a framework, why is it unopinionated?** → It gives freedom to organize the code as needed.
+
+✅ **Why Express.js?** → Simplifies routing, middleware, and API development.  
+
+✅ **Why not just Node.js HTTP module?** → Express provides cleaner, maintainable, and scalable code.  
+
+✅ **What is an endpoint?** → A URL where Express.js listens and responds to requests.  
+
+✅ **If Express is a framework, why is it unopinionated?** → It gives freedom to organize the code as needed.  
+
 
 🚀 **Express.js is simple, flexible, and powerful – making web development easier!**
