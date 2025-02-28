@@ -1,0 +1,7 @@
+Here the sample sentence that is written into a file called data.txt ( here the existing data will go now)
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
+Hello world!
